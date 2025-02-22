@@ -47,7 +47,7 @@ export default function HomePage() {
         </div>
         <div className="mt-10 md:mt-0">
           <Image 
-            src="/gwc.png" 
+            src="./gwc.png" 
             alt="Developer at Desk" 
             width={300} 
             height={300} 

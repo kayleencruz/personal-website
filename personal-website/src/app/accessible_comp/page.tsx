@@ -10,7 +10,7 @@ export default function AccessibleComponents() {
     return (
     <div className= "scroll-smooth">
         {/* Navbar */}
-        <div className={`${darkMode ? "bg-black text-white" : "bg-white text-black"} fixed w-full top-0 z-10`}>
+        <div className={`${darkMode ? "bg-slate-100 text-black" : "bg-white text-black"} fixed w-full top-0 z-10`}>
         <nav className="flex justify-between items-center px-8 py-8 mx-6">
           <Link href="/" className="text-xl font-bold">Kayleen Cruz</Link>
           <div className="flex space-x-6">
@@ -21,7 +21,7 @@ export default function AccessibleComponents() {
         </nav>
       </div>
 
-      <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-black text-white">
+      <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-white text-black">
         {/* Title Section */}
         <div className= "mt-40 min-w-screen text-center content-center">
           <h1 className="text-6xl font-bold ml-8 py-8">Accessible Components</h1>
@@ -31,7 +31,7 @@ export default function AccessibleComponents() {
           {/* Main Image */}
           <div className= "py-8">
             <Image 
-                src="/searchbars.png" 
+                src="./searchbars.png" 
                 alt="collage" 
                 width={800} 
                 height={800} 
@@ -41,7 +41,7 @@ export default function AccessibleComponents() {
       </section>
 
 
-      <section id="Interacting with Existing Search Bars" className="flex flex-col items-center pt-24 bg-black text-white">
+      <section id="Interacting with Existing Search Bars" className="flex flex-col items-center pt-24 bg-white text-black">
         <h1 className="font-bold text-3xl pb-8"> Inputs: </h1>
         <p className="font-extralight pb-12 max-w-2xl"> 
             First, I sought out to interact with the different components on each 
@@ -196,7 +196,7 @@ export default function AccessibleComponents() {
       </section>
 
       {/* Table for output */}
-      <section id="Interacting with Existing Search Bars" className="flex flex-col items-center pt-24 bg-black text-white">
+      <section id="Interacting with Existing Search Bars" className="flex flex-col items-center pt-24 bg-white text-black">
         <h1 className="font-bold text-3xl pb-8"> Output: </h1>
         <p className="font-extralight pb-12 max-w-2xl"> 
             Next, I observed the visual cues that show users when the search bar 
@@ -292,7 +292,7 @@ export default function AccessibleComponents() {
         </ul>
       </section>
 
-      <section id="overview" className="min-h-screen flex flex-col items-center pt-24 bg-black text-white">
+      <section id="overview" className="min-h-screen flex flex-col items-center pt-24 bg-white text-black">
         <h1 className="font-bold text-3xl pb-12"> State Model and Redesign </h1>
 
         <p className="max-w-2xl"> 
@@ -311,7 +311,7 @@ export default function AccessibleComponents() {
         {/* image of current search bar */}
         <div className= "py-8">
             <Image 
-                src="/og-search.png" 
+                src="./og-search.png" 
                 alt="gmail search bar" 
                 width={800} 
                 height={800} 
@@ -324,14 +324,14 @@ export default function AccessibleComponents() {
         <div className= "p-8 flex flex-row space-x-8">
             {/* mouse state diagram of current search bar */}
             <Image 
-                src="/og-mouse-user.png" 
+                src="./og-mouse-user.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
             />
             {/* keyboard state diagram of current search bar */}
             <Image 
-                src="/og-keyboard.png" 
+                src="./og-keyboard.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
@@ -441,7 +441,7 @@ export default function AccessibleComponents() {
         {/* image of the state models for keyboard and mouse users */}
         <div className= "py-12">
             <Image 
-                src="/hover-search.png" 
+                src="./hover-search.png" 
                 alt="gmail search bar redesign" 
                 width={800} 
                 height={800} 
@@ -454,14 +454,14 @@ export default function AccessibleComponents() {
         <div className= "p-8 flex flex-row space-x-8">
             {/* mouse state diagram of redesigned search bar */}
             <Image 
-                src="/redesigned-mouse.png" 
+                src="./redesigned-mouse.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
             />
             {/* keyboard state diagram of current search bar */}
             <Image 
-                src="/redesigned-keyboard.png" 
+                src="./redesigned-keyboard.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
