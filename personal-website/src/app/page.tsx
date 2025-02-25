@@ -13,7 +13,7 @@ export default function HomePage() {
     {
       title: "Accessible Components",
       category: "Redesigning Gmail's Search Bar",
-      image: "/personal-website/searchbars.png",
+      image: "/searchbars.png",
       link: "/accessible_comp",
 
     },
@@ -47,7 +47,7 @@ export default function HomePage() {
         </div>
         <div className="mt-10 md:mt-0">
           <Image 
-            src="/personal-website/gwc.png" 
+            src="/gwc.png" 
             alt="Developer at Desk" 
             width={300} 
             height={300} 

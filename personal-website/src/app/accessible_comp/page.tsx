@@ -31,7 +31,7 @@ export default function AccessibleComponents() {
           {/* Main Image */}
           <div className= "py-8">
             <Image 
-                src="/personal-website/searchbars.png" 
+                src="/searchbars.png" 
                 alt="collage" 
                 width={800} 
                 height={800} 
@@ -311,7 +311,7 @@ export default function AccessibleComponents() {
         {/* image of current search bar */}
         <div className= "py-8">
             <Image 
-                src="/personal-website/og-search.png" 
+                src="/og-search.png" 
                 alt="gmail search bar" 
                 width={800} 
                 height={800} 
@@ -324,14 +324,14 @@ export default function AccessibleComponents() {
         <div className= "p-8 flex flex-row space-x-8">
             {/* mouse state diagram of current search bar */}
             <Image 
-                src="/personal-website/og-mouse-user.png" 
+                src="/og-mouse-user.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
             />
             {/* keyboard state diagram of current search bar */}
             <Image 
-                src="/personal-website/og-keyboard.png" 
+                src="/og-keyboard.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
@@ -441,7 +441,7 @@ export default function AccessibleComponents() {
         {/* image of the state models for keyboard and mouse users */}
         <div className= "py-12">
             <Image 
-                src="/personal-website/hover-search.png" 
+                src="/hover-search.png" 
                 alt="gmail search bar redesign" 
                 width={800} 
                 height={800} 
@@ -454,14 +454,14 @@ export default function AccessibleComponents() {
         <div className= "p-8 flex flex-row space-x-8">
             {/* mouse state diagram of redesigned search bar */}
             <Image 
-                src="/personal-website/redesigned-mouse.png" 
+                src="/redesigned-mouse.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
             />
             {/* keyboard state diagram of current search bar */}
             <Image 
-                src="/personal-website/redesigned-keyboard.png" 
+                src="/redesigned-keyboard.png" 
                 alt="gmail search bar" 
                 width={600} 
                 height={600} 
