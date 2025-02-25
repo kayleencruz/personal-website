@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
 
   basePath: "/personal-website",
 
-
   images: {
     unoptimized: true,
   },
