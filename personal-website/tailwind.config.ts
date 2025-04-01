@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        serifDisplay: ["DM Serif Display", "serif"],
+        robotoFlex: ["Roboto Flex", "sans-serif"],
+        robotoSerif: ["Roboto Serif", "serif"],
+      },
     },
   },
   plugins: [],

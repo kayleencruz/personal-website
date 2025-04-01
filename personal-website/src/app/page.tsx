@@ -17,6 +17,20 @@ export default function HomePage() {
       link: "/accessible_comp",
 
     },
+
+    {
+      title: "Personas and Storybuilding",
+      category: "Redesigning a Printer Interface",
+      image: "/printer-pic.jpg",
+      link: "/storytelling",
+    },
+
+    {
+      title: "Responsive Redesign",
+      category: "Redesigning a Middle School's website",
+      image: "/gms-homepage-redesign.png",
+      link: "/gms_redesign",
+    },
   ];
 
   return (
@@ -63,7 +77,7 @@ export default function HomePage() {
         </div>
 
         {/* Cards Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 pb-24">
           {projects.map((project, index) => (
             <Link key={index} href={project.link} className="block min-h-96 min-w-80 rounded-lg overflow-hidden bg-gray-900 p-4 hover:scale-105 transition-transform">
               <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
