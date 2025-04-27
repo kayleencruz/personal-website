@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono, DM_Serif_Display } from "next/font/google";
-import { DM_Serif_Display, Roboto_Flex, Roboto_Serif } from "next/font/google";
+// import { DM_Serif_Display, Roboto_Flex, Roboto_Serif } from "next/font/google";
+
+import { Inria_Serif } from "next/font/google";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -13,22 +15,29 @@ import "./globals.css";
 //   subsets: ["latin"],
 // });
 
-
-const dmSerifDisplay = DM_Serif_Display({
+const inriaSerif = Inria_Serif({
   subsets: ["latin"],
-  weight: "400", // Only 400 is available for DM Serif Display
+  weight: ["300", "400", "700"],
   style: ["normal", "italic"],
+  variable: "--font-inria-serif",
 });
 
-const robotoFlex = Roboto_Flex({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Adjust as needed
-});
 
-const robotoSerif = Roboto_Serif({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+// const dmSerifDisplay = DM_Serif_Display({
+//   subsets: ["latin"],
+//   weight: "400", // Only 400 is available for DM Serif Display
+//   style: ["normal", "italic"],
+// });
+
+// const robotoFlex = Roboto_Flex({
+//   subsets: ["latin"],
+//   weight: ["400", "700"], // Adjust as needed
+// });
+
+// const robotoSerif = Roboto_Serif({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -42,9 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={`${dmSerifDisplay.className} ${robotoFlex.className} ${robotoSerif.className}`}>
+      <body className={`${inriaSerif.variable} font-serif antialiased`}>
         {children}
       </body>
     </html>

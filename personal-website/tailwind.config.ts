@@ -13,9 +13,12 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        serifDisplay: ["DM Serif Display", "serif"],
-        robotoFlex: ["Roboto Flex", "sans-serif"],
-        robotoSerif: ["Roboto Serif", "serif"],
+        serif: ['"Inria Serif"', 'serif'],
+        // Optional: add custom ones
+        inria: ['"Inria Serif"', 'serif'],
+        'inria-light': ['"Inria Serif"', 'serif'],
+        'inria-bold': ['"Inria Serif"', 'serif'],
+        // etc. — these still use utility classes for weight & style
       },
     },
   },

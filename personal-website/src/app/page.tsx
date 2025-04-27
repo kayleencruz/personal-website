@@ -12,33 +12,36 @@ export default function HomePage() {
   const projects = [
     {
       title: "Accessible Components",
-      category: "Redesigning Gmail's Search Bar",
+      desc: "Redesigning Gmail's Search Bar",
       image: "/searchbars.png",
       link: "/accessible_comp",
+      tag: "Figma",
 
     },
 
     {
       title: "Personas and Storybuilding",
-      category: "Redesigning a Printer Interface",
+      desc: "Redesigning a Printer Interface",
       image: "/printer-pic.jpg",
       link: "/storytelling",
+      tag: "Figma",
     },
 
     {
       title: "Responsive Redesign",
-      category: "Redesigning a Middle School's website",
+      desc: "Redesigning a Middle School's website",
       image: "/gms-homepage-redesign.png",
       link: "/gms_redesign",
+      tag: "Figma",
     },
   ];
 
   return (
-    <div className="scroll-smooth">
+    <div className="bg-rose-50 scroll-smooth text-black">
       {/* Navbar */}
-      <div className={`${darkMode ? "bg-black text-white" : "bg-white text-black"} fixed w-full top-0 z-10`}>
+      <div className=" bg-rose-50 fixed w-full top-0 z-10">
         <nav className="flex justify-between items-center px-8 py-8 mx-6">
-          <h1 className="text-xl font-bold">Kayleen Cruz</h1>
+          <h1 className="text-xl ">Kayleen Cruz</h1>
           <div className="flex space-x-6">
             <Link href="#about" className="hover:text-gray-400">About</Link>
             <Link href="#skills" className="hover:text-gray-400">Skills</Link>
@@ -48,44 +51,90 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section id="home" className="flex flex-col md:flex-row items-center justify-center px-8 md:px-40 bg-black text-white pt-48">
-        <div className="max-w-xl">
-          <h2 className="text-5xl font-bold">Hi, I am <span className="text-pink-300">Kayleen.</span></h2>
-          <button className="mt-4 px-4 py-2 bg-white text-black rounded-md font-semibold">My Resume</button>
-          <div className="flex space-x-4 mt-4 text-2xl">
-            <FaLinkedin className="text-blue-600" />
-            <FaGithub className="text-white" />
-            <SiGmail className="text-red-500" />
+      <section id="home" className="flex flex-col md:flex-row items-center content-center justify-center px-8 pt-64">
+        <div className="pr-24">
+
+          <div className="space-y-6 ">
+            <h2 className=" text-6xl md:max-2xl:text-8xl font-semibold">Hi, I am <span className="text-pink-600">Kayleen.</span></h2>
+            <p className="max-w-2xl text-xl"> I am a 3rd year student studying Computer Science at Brown University. 
+              I am a aspiring Software Engineer interested in system design and 
+              full-stack development. </p>
           </div>
-          <p className="mt-4 text-lg">I am a student at Brown University!</p>
+
+          <div className="flex flex-col mt-8 items-start">
+            <div className="flex flex-col items-center">
+            <button className="px-6 py-3 bg-white rounded-3xl drop-shadow-lg hover:bg-pink-300">
+              My Resume
+            </button>
+            <div className="flex space-x-4 mt-8 text-3xl">
+              <FaLinkedin className="text-blue-600" />
+              <FaGithub className="text-black" />
+              <SiGmail className="text-red-500" />
+            </div>
+          </div>
+          </div>
         </div>
-        <div className="mt-10 md:mt-0">
+
+        <div>
           <Image 
-            src="/gwc.png" 
+            src="/new-homepage-image.png" 
             alt="Developer at Desk" 
-            width={300} 
-            height={300} 
+            width={350} 
+            height={350} 
           />
         </div>
       </section>
 
-      {/* My Work Section */}
-      <section id="projects" className="pt-64 flex flex-col items-center justify-center bg-black text-white px-6 ">
-        {/* Title Section */}
+      <section id="tech stack" className="pt-48 items-center justify-center">
+
         <div className="text-center">
-          <h1 className="text-6xl font-bold">My Work</h1>
+          <h1 className="text-6xl font-bold">Tech Stack</h1>
         </div>
 
-        {/* Cards Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 pb-24">
-          {projects.map((project, index) => (
-            <Link key={index} href={project.link} className="block min-h-96 min-w-80 rounded-lg overflow-hidden bg-gray-900 p-4 hover:scale-105 transition-transform">
-              <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
-              <h2 className="mt-6 text-xl font-semibold">{project.title}</h2>
-              <p className="text-gray-400">{project.category}</p>
-            </Link>
-          ))}
+        <div className="pl-24">
+          <h1> Technical Languages</h1>
         </div>
+
+        <div className="grid grid-cols-4">
+
+        </div>
+      </section>
+
+      {/* My Work Section */}
+      <section id="projects" className="pt-48 flex flex-col items-center justify-center px-6 ">
+        {/* Title Section */}
+        <div className="text-center">
+          <h1 className="text-6xl font-bold">Selected Work</h1>
+        </div>
+
+
+        {/* Cards Section */}
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-7xl w-full mx-auto px-8">
+
+        {projects.map((project, index) => (
+          <Link
+            key={index}
+            href={project.link}
+            className="flex flex-col rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 bg-white min-w-[300px] sm:min-w-[390px]"
+          >
+            {/* Top Section: Background color block */}
+            <div className="bg-red-300 aspect-[4/3] flex items-center justify-center">
+              {/* If you want an image inside, you can put <img> here */}
+            </div>
+
+            {/* Bottom Section: Content */}
+            <div className="p-4 flex flex-col gap-2">
+              <h2 className="text-lg font-semibold text-black">{project.title}</h2>
+              <p className="text-gray-600 text-sm">{project.desc}</p>
+
+              {/* Tag */}
+              <span className="mt-2 inline-block bg-pink-100 text-pink-600 text-xs font-semibold px-3 py-1 rounded-full w-max">
+                {project.tag}
+              </span>
+            </div>
+          </Link>
+        ))}
+      </div>
       </section>
     </div>
   );
